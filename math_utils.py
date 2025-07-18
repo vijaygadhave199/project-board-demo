@@ -1,4 +1,6 @@
 # math_utils.py
-# TODO: Implement factorial function
+
 def calculate_factorial(n):
-    pass
+    if n == 0 or n == 1:
+        return 1
+    return n * calculate_factorial(n - 1)
